@@ -1,0 +1,40 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js",
+    "test": "env-cmd ./config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "install": "^0.13.0",
+    "jquery": "^3.5.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.1",
+    "npm": "^6.14.5",
+    "sharp": "^0.25.2",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.1"
+  }
+}

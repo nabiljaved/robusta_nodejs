@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar{
+    border-bottom: 5px solid orange;
+}
+.page-wrap {
+    margin-top: -30px;
+    min-height: 100vh;
+    background: #dedede;
+}
+
+ul a {
+    font-weight: bolder;
+}
+
+.log-in{
+  display : none !important;
+
+}
+
+.log-out{
+  display : none !important;
+}
+
+ul a:hover {
+    background-color: maroon;
+    color: #fff !important;
+    font-weight: bolder;
+    border: 1px solid orange;
+}
+
+#video-section{
+    margin-top:-16px; 
+    display:flex; 
+    justify-content:center; 
+    position:relative; 
+    background: rgb(0,0,0,0.7)
+}
+
+video{
+    width: 100%;
+    height: 600px;
+    object-fit: fill; 
+    z-index: -1; 
+    
+}
+
+#section-loyalty-card{
+    position: relative;
+    text-align: center;
+    background-image: url('https://miro.medium.com/max/3000/1*uBcu0QwuuVtdjae3pb_BcQ.png');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.dark-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+}
+
+#section-loyalty-card-2{
+    position: relative;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/originals/17/fa/ce/17faceb14c1c8f0b26bf6cd90d6080a2.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.dark-overlay-2{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+}
+
+/*combinatory selector*/
+.card > img{
+    opacity: 0.9;
+    height:350px;
+    
+}
+
+.card > img:hover{
+    opacity: 10;
+    height:350px;
+    
+}
+
+.card-header{
+    background-color: red;
+}
+
+#image-card .card-body{
+    background-color: darkorange;
+}
+
+.card-title ul > li{
+    background-color: SaddleBrown!important;
+    color:#fff;
+    font-weight: 400;
+}
+
+.card-title ul > li:hover{
+    background-color: #339AF0 !important;
+    color:#fff;
+    font-weight: 400;
+    font-style: italic;
+    font-size: large;
+}
+
+.card-footer{
+    background-color: papayawhip !important;
+}
+
+#healthy-icons .fas{
+    background-color: orange;
+    padding: 5px;
+    color: white;
+}
+
+.carousel-item {
+    height: 530px;
+  }
+  
+  .carousel-image-1 {
+    background: url('https://images.unsplash.com/photo-1507120366498-4656eaece7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-size: cover;
+    
+  }
+  
+  .carousel-image-2 {
+    background: url('https://images.squarespace-cdn.com/content/v1/56262940e4b08b3753689ae3/1566463449189-I6GAD4DHPTWZOMUK1FC1/ke17ZwdGBToddI8pDm48kIIAf3dKC8DeEVrRoVlu9iYUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnJrrhzOlCtyGEHqgnG8JzT24vhCzLAoANgn7hndTaAt_ZcyK-WFf5dpFwiGnvEne5g/Website+Slider-19.png?format=1500w');
+    background-size: cover;
+  }
+
+  .carousel-image-3 {
+    background: url('https://timeincsecure-a.akamaihd.net/rtmp_uds/474428695/201808/2717/474428695_5826033902001_5826033089001-vs.jpg?pubId=474428695&videoId=5826033089001');
+    background-size: cover;
+
+  }
+
+  .carousel-image-4 {
+    background: url('https://cdn.shopify.com/s/files/1/0070/7032/files/burst.jpg?v=1516372954');
+    background-size: cover;
+
+  }
+
+  .carousel-image-5 {
+    background: url('https://secondcup.com/sites/default/files/styles/slide_image_large/public/slide-image/large-images/SC-DIG9026-DigitalAssets_Winter_2020_Desktop_Slider_Maple_En.jpg?itok=DWknHwqX');
+    background-size: cover;
+
+  }
+
+  #contact{
+    
+    background-image: url('https://i.pinimg.com/originals/17/fa/ce/17faceb14c1c8f0b26bf6cd90d6080a2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  #contact .container{
+      background-color: rgb(0,0,0,0.7);
+      padding: 5px;
+      
+  }
+
+  #contact .container .card-body{
+      color: #fff;
+  }
+
+  ::placeholder {
+    color: white !important;
+    
+  }
+
+  #filter::placeholder{
+       color: #000 !important;
+  }
+
+  .table-responsive tr {
+    
+    width: 100%;
+    
+}
+
+  #video-play {
+    position: relative;
+    min-height: 200px;
+    background-image: url('https://lh3.googleusercontent.com/proxy/W6_VQlm0BkAGeM6hSdoB3dOloZkPyXzkAPfReH86HV6rS4aL6hameiz1vr5EVx9yoXNppJuIog23YRNslFKHYAPGwAmwE-mpQZe-QjDVXCEG');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #video-play a {
+    color: #fff;
+  }
+
+  #testimonials{
+    position: relative;
+    min-height: 200px;
+    background-image: url('https://smartwerksusa.com/smartconnect/wp-content/uploads/2019/07/blog_build_stronger_connections.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  #testimonials .overlay{
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(0,0,0,0.7);
+  }
+
+  #main-footer {
+    background: #000;
+    color: #fff;
+  }
+  

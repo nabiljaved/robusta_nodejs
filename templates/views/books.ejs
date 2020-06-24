@@ -1,0 +1,60 @@
+
+    <%- include('../partials/head') %>
+
+    
+    <div class="container mt-4">
+        
+        <div class="row" >
+          <div class="col-md-6">
+            <h1 class="display-4 text-center">
+              <i class="fas fa-book-open text-primary"></i> My<span class="text-success">Book</span>Store
+            </h1>
+          </div>
+          <div class="col-md-6  align-self-center">
+              <input type="text" class="form-control" id="filter" placeholder="Search Books ..." >
+          </div>
+        </div>
+              
+            <div id="message" style="margin-top: 20px;"></div>
+  
+            <form id="book-form" style="margin-top: 30px;">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+              </div>
+              <input type="submit" value="Add Book" id="add-button" class="btn btn-primary btn-block">
+              <input type="submit" value="Update Book" id="update-button" class="btn btn-info btn-block" style="display: none;">
+            </form>
+
+            <div class="table-responsive">
+
+              <table table id="myTable" class="table tablesorter mt-3">
+              
+                <thead class="thead-dark" style="background-color: darkblue;">
+                  <tr>
+                    <th >Title  <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+                    <th>Author   <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+                    <th>ISBN#    <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+                    
+                    <th></th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+              </table>
+            </div>
+        </div>
+    
+        <div style="margin-top: 200px;"></div>
+        
+        <script src="/js/books.js"></script>
+        
+    <%- include('../partials/footer') %>

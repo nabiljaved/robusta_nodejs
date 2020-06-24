@@ -1,0 +1,71 @@
+
+    <%- include('../partials/head-two') %>
+
+    
+
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+           <div id="container" class="card">
+            <div class="d-flex justify-content-center ">
+                <img id="image" src="/images/weather-gif.gif" alt="weather gif icon">
+              </div>
+
+              <h1 class="text-center text-white" style="margin: 10px 0px;">Enter a Location for a Weather</h1>
+
+              <div class="container mt-2">
+                <form id="weather-form">
+                    <div class="row" >
+
+                        <!--inputs-->
+                            <div class="col-md-8" >
+                                <input type="text" class="form-control bg-transparent text-white"  placeholder="Address..." name="address">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="submit" value="find" class="btn btn-outline-warning btn-block" class="form-control">
+                            </div>
+
+                            <!--spinner-->
+
+                            <div class="row mx-auto mt-2" id="loaders">
+                                <img id="spinner" src="/images/spinner.gif" width="150">
+                            </div>
+                            
+                            <!--show outputs-->
+                            <div id="output" class="mx-auto">
+
+                                <!--weather items-->
+                                <div id="weather-items">
+                                    <div id="weather-logo">
+                                        <img src="/images/clouds.png" alt="" class="img-fluid mb-3 rounded-circle">
+                                   </div>
+    
+                                    <div id="weather-description">
+                                        <h1 id="degree" class="mt-4 text-white"> </h1>
+                                        <p id="description" class="text-white"></p>
+                                        <p id="humidity" style="margin-top: -15px;" class="text-white"></p>
+                                   </div>
+                                </div>
+
+                                 <!--weather items2-->
+
+                                 <div id="weather-items2">
+                                    <p id="lat" class="text-white"> </p>
+                                    <p id="lon" class="text-white"></p>
+                                 </div>
+
+                            </div>
+                    </div>
+              </form>
+              </div>
+            
+           </div>
+        </div>
+      </div>
+
+      <div id="margin">
+            
+      </div>
+      
+      
+      <script src="/js/main-weather.js"></script>
+      <%- include('../partials/footer') %>
